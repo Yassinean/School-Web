@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./php_icon_130857.png">
+    <title>Cours PHP</title>
+    <style>
+   
+        :root{
+            --byad:#ffffff;
+            --violet:#7700ff;
+            --gradient:linear-gradient(90deg, var(--byad), var(--violet));
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:var(--gradient);
+            padding:3rem 7%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container{
+            background:rgb(255, 255, 255);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        }
+        .t1{
+            text-align: center;
+            font-family:  'Nunito', sans-serif;
+            color: #7700ff;
+            margin-top: -5px;
+        }
+        .t2{
+        color: var(--violet);
+        font-size: 25px;
+        font-family:  'Nunito', sans-serif;
+        text-align: center;  
+        border-radius: 15px;
+        }
+        .t3{
+        color: var(--violet);
+        font-size: 25px;
+        font-family:  'Nunito', sans-serif;
+        text-align: center;
+        }
+        .para{
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family:  'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .para1{
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family:  'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .a1{
+            color: rgb(38, 0, 255);
+        }
+        .a2{
+            color: rgb(121, 0, 0);
+        }
+        .ag{
+            margin-left: -50px;
+        }
+        .para2{ 
+        border: 1px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        font-family:  'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .para22{
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family:  'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .videos{
+          margin-left: 250px;
+        }
+        .button{
+          text-decoration: none;
+          font-size: .5rem;
+          font-family: monospace;
+          transition: .1s ease ;
+      }
+      .button :hover{
+          background-color: rgb(110, 2, 252);
+          color: azure;
+          transform: scale(1.1);
+          border-radius: 15px;
+      }
+        .a0{
+            color: red;
+            font-size: 30px;
+        }
+        .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url(./php.jpeg);
+        background-attachment: fixed;
+        }
+        @media (max-width:500px){
+            .container{
+                font-size: 70%;
+                height: 70%;
+            }
+            .t1{
+                font-size: 80%;
+                text-align: center;
+            }
+            .t3{
+                font-size: 70%;
+                text-align: center;
+            }
+            .t4{
+                font-size: 70%;
+                text-align: center;
+            }
+             img{
+                width: 5%;
+                height: 5%;
+             }
+             body{
+                font-size: 70%;
+            }
+             .main{
+                background-image: url(./php.jpeg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+             }
+             .para{
+                font-size: 70%;
+             }
+             .a0{
+                font-size: 70%;
+             }
+             video{
+                width: 294px;
+             }
+             .videos{
+                margin-left: 0px;
+             }
+             .button{
+                font-size: 70%;
+             }
+             .p{
+                 font-size: 70%;
+             }
+             .photo{
+                width: 290px;
+                height: 100px;
+                margin-left: 5px;
+             }
+             .para2{
+                 font-size: 70%;
+             }
+             .para1{
+                 font-size: 70%;
+             }
+             .a1{
+                 font-size: 70%;
+             }
+             img{
+                 margin-left: 5px;
+             }
+             .list{
+                font-size: 70%;
+                margin-left: 0px;
+             }
+             .t2{
+                 font-size: 70%;
+             }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+    
+        <h1 class="t1" id="#top"><img src="images/php_icon_130857.png" alt="image de php"  width="25px" height="25px"> P H P </h1>
+    </header>
+    <section class="main">
+        <div>
+            <h1></h1>
+        </div>
+    </section>
+    <h2 class="t2">Les bases du langage PHP</h2>
+    <h3 class="t3">Premier programme : affichage du traditionnel « Hello World »</h3>
+    <p class="para"><img src="images/php_icon_130857.png" width="50px" height="50px" alt="fil"> Dans les précédents tutoriels concernant les environnements de travail, nous avons montré que PHP était un langage de script dynamique précompilé et interprêté côté serveur. Il nous appartient maintenant de réaliser nos premiers programmes et de les exécuter sur le serveur Web (local ou distant).
+
+        En programmation informatique, il existe une "tradition" qui est de générer la chaîne de caractères (notez le terme au passage) Hello World ! sur la sortie standard (dans notre cas c'est un écran d'ordinateur). Commençons donc par le tout premier script présenté ci-dessous.</p>
+        <h3 class="t3">Premier script PHP</h3>
+        <p class="para1">Recopiez le code suivant dans un éditeur de texte (BlocNote, Wordpad ou Notepad++ font largement l'affaire) puis enregistrez ce fichier avec le nom hello_world_basic.php.<br>
+        (?php <a class="a1">echo</a> <a class="a2">'Hello World !'</a>; ?)<br>
+        Exécutez ce premier script dans un navigateur Web (Safari, Firefox, Opéra, Internet Explorer...). Vous constatez que le texte Hello World ! s'affiche bien à l'écran. Nous obtenons donc le résultat escompté au départ. Passons aux explications.
+        </p>
+        <h3 class="t3">Explication du code</h3>
+        <p class="para">Tout d'abord les balises. Tout script PHP doit être entouré par deux balises pour le délimiter d'un autre type de contenu se trouvant dans un même fichier (du code HTML par exemple). Ici nous utilisons les marqueurs <?php et ?>. Il en existe d'autres mais ils sont fortement déconseillés à utiliser.
+        </p>
+        <h3 class="t3">Amélioration du Hello World</h3>
+        <p class="para1">Jusque là rien de difficile. Passons alors à un niveau supérieur. Nous allons générer notre Hello World ! au milieu d'un document HTML. Voici le code du fichier hello_world_avance1.php : <br>
+            <a class="ag">(!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd") <br>
+            (html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr")<br>
+              (head) <br>
+                (title)Premier programme PHP !(/title) <br>
+              (/head) <br>
+              (body) <br>
+                (?php <br>
+                  echo 'Hello World !'; <br>
+                ?) <br>
+              (/body) <br>
+            (/html) </a> <br>
+            <a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </p>
+        <h3 class="t3">Conclusion</h3>
+        <p class="para2">Nous venons de voir, dans ce premier tutoriel des bases du langage PHP comment : <br></p>
+        <ul class="para2"  type="circle">
+            <li>intégrer du code PHP dans une page web.</li>
+            <li>afficher du texte sur la sortie standard.</li>
+            <li>générer du code HTML.</li>
+        </ul>
+        <h3 class="t3">Cours PHP complet : &#128071;</h3>
+        <div class="videos"> 
+            <video src="C:\Users\pc\Downloads\PHP Programming Language Tutorial - Full Course.mp4" width="700" height="350" controls></video>
+        </div>
+        <a href="#top" class="button"><button class="button"><h2> back to top &#128070;</h2></button></a>
+    </div>
+    </body>
+</html>

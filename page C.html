@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./c1.png">
+    <title>Cours C</title>
+    <style>
+        :root{
+            --byad:#ffffff;
+            --chibi:#0066ff;
+            --gradient:linear-gradient(90deg, var(--byad), var(--chibi));
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:var(--gradient);
+            padding:3rem 7%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container{
+            background:rgb(255, 255, 255);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        }
+        .t1{
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            margin-top: -5px;
+            font-size: 40px;
+            color: #0066ff;
+        }
+        .t3{
+          color: rgb(77, 2, 252);
+          font-size: 40px;
+          font-family: 'Nunito', sans-serif;
+          text-align: center;
+        }
+        .t4{
+          color: var(--chibi);
+          font-size: 25px;
+          font-family: 'Nunito', sans-serif;
+          text-align: center;  
+        }
+        .para{
+          border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito', sans-serif;
+          font-size: 20px;
+      }
+      .para1{
+          border: 1px solid rgb(0, 0, 0);
+          text-align: left;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito', sans-serif;
+          font-size: 20px;
+      }
+      .pp{
+          margin-left: 15px;
+      }
+      .a1{
+          color: red;
+      }
+      .a2{
+          color: green;
+      }
+      .a3{
+          color: blue;
+      }
+      .a0{
+          color: red;
+          font-size: 30px;
+      }
+      .button{
+          text-decoration: none;
+          font-size: .5rem;
+          font-family: monospace;
+          transition: .1s ease ;
+      }
+      .button :hover{
+          background-color: rgb(64, 36, 189);
+          color: azure;
+          transform: scale(1.1);
+          border-radius: 15px;
+      }
+        .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url(./c.jpeg);
+        background-attachment: fixed ;
+        background-size: cover;
+      }
+      .videos{
+          margin-left: 250px;
+        }
+        @media (max-width:500px){
+            body{
+                font-size: 70%;
+            }
+            .container{
+                font-size: 70%;
+            }
+            .t1{
+                font-size: 80%;
+                text-align: center;
+            }
+            .t3{
+                font-size: 70%;
+                text-align: center;
+            }
+            .t4{
+                font-size: 70%;
+                text-align: center;
+            }
+             img{
+                width: 5%;
+                height: 5%;
+             }
+             .main{
+                font-size: none;
+                background-image: url(./c.jpeg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                }
+             .para{
+                font-size: 70%;
+             }
+             .a0{
+                font-size: 70%;
+             }
+             video{
+                width: 295px;
+             }
+             .videos{
+                margin-left: 0px;
+             }
+             .button{
+                font-size: 70%;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1 class="t1" id="#top"><img src="images/c1.png" alt="image de C"  width="25px" height="25px"><strong> langage C</strong> </h1>
+    </header>
+    
+    <section class="main">
+        <div>
+            <h1></h1>
+        </div>
+    </section>
+    <h1 class="t3"> Notions de base</h1>
+    <h4 class="t4">1) Bibliothèques de fonctions</h4>
+    <p class="para">La pratique du C exige l'utilisation de bibliothèques de fonctions. Ces bibliothèques sont disponibles sous forme précompilées (.lib). Afin de pouvoir les utiliser, il faut inclure des fichiers en-tête (.h) dans nos programmes. Ces fichiers contiennent les prototypes des fonctions prédéfinies dans les bibliothèques et créent un lien entre les fonctions précompilées et nos programmes.<br>
+
+        Pour inclure les fichiers en-tête: <br>
+        
+        #include (fichier.h) <br>
+        
+        Pour le compilateur que nous utiliserons, différents types de fichiers seront identifiés par leurs extensions: <br>
+        
+        .c:        fichier source <br>
+        
+        .obj: fichier compilé <br>
+        
+        .exe: fichier exécutable <br>
+        
+        .lib:      bibliothèque de fonctions précompilées <br>
+        
+        .h:        bibliothèque en-tête
+    </p>
+    <h4 class="t4">2) Composantes d'un programme en C </h4>
+    <p class="para1">
+        <div class="pp">
+        -    La fonction main :<br>
+
+        Elle constitue le programme principal: <br>
+        main() <br>
+        { <br>
+        déclaration des variables instructions
+        } <br>
+
+-    Les fonctions <br>
+
+Type_du_resultat Nom_fonction (Type_param Nom_param,…)
+
+{ <br>
+
+déclaration des variables locales instructions
+
+} <br>
+
+-    Les identificateurs :
+
+Les noms des fonctions et des variables en C sont composés d'une suite de lettres et de chiffres: <br>
+
+-    le premier caractère doit être une lettre <br>
+
+-    L'ensemble des symboles utilisables est: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, …., x, y, z, A, B, C, …., X, Y, Z, _} <br>
+
+-    Le C distingue les minuscules et les majuscules <br>
+
+-    La longueur des identificateurs n'est pas limitée, mais le C distingue des 31 premiers caractères <br>
+
+<a class="a1">Remarque: </a><br>
+
+Il est déconseillé d'utiliser le symbole "_" comme premier caractère pour un identificateur, car il est souvent employé pour définir les variables globales de l'environnement C.
+        </div>
+    </p>
+    <h4 class="t4">3) Premier programme en C</h4>
+    <p class="para1">
+        <div class="pp">
+        Le classique "bonjour" (affiche bonjour à l'écran). Pour le faire, il faut: <br>
+
+    -     Inclure les bibliothèques . <br>
+
+    -     Inclure le main main() { <br>
+
+    déclaration des variables: aucune instruction: écrire "bonjour" } <br>
+
+    La fonction prédéfinie qui permet d'écrire à l'écran est printf, elle est contenue dans le fichier en-tête <a class="a2">stdio.h;</a>. <br>sa syntaxe est: <br><a class="a3">printf("ce que l'on veut écrire");</a>  <br>
+
+    Voici donc notre premier programme: <br>
+
+    <a class="a2"> #include (stdio.h);</a><br>   
+    main() { <br>
+
+    printf("bonjour\n");    <a class="a2">/*toute instruction se termine par un point virgule*/</a> } <br>
+
+    Remarque: les séquences d'échappement <br>
+
+    <a class="a1">\t </a>             ==>        tabulation <br>
+
+    <a class="a1">\n</a>              ==>    nouvelle ligne <br>
+
+    <a class="a1">\b</a>         ==>      batch (curseur arrière) <br>
+
+    <a class="a1">\r</a>        ==>        return (retour au début de ligne, sans saut de ligne) <br>
+
+    <a class="a1"> \a </a>    ==>       attention (signal acoustique) <br>
+
+    Si l'on veut écrire le symbole " ou \: \" et \\ <br>
+
+<a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </div>
+    </p>
+    <h4 class="t4">4) Les opérateurs standards </h4>
+    <p class="para1">
+        <div class="pp">
+        -      L'affectation (=) <br>
+
+    Nom_variable=expression; <br>
+
+    Affectation avec des valeurs constantes: <br>
+
+    Pi = 3.1416; <br>
+
+    Lettre = 'L'; <br>
+
+    Affectation avec des valeurs variables: <br>
+
+    a=b; <br>
+
+    Affectation avec des expressions: <br> voir la suite des opérateurs 
+
+    -      Les opérateurs arithmétiques . <br>
+
+    +   ==>       addition . <br>
+
+    -    ==>  soustraction . <br>
+
+    *    ==>      multiplication . <br>
+
+    /    ==>       division . <br>
+
+    %     ==>    modulo (reste de la division entière) (par exemple, 5%2=1) . <br>
+
+    -    Les opérateurs logiques <br>
+
+    &&       ==>           ET . <br>
+
+    ||          ==>             OU . <br>
+
+    !              ==>         NON . <br>
+
+    Les résultats des opérations logiques sont de type int: la valeur 0 correspond à la valeur booléenne FAUX, la valeur 1 correspond à la valeur booléenne VRAI. <br>
+
+    ==     ==>   EGALITE                  /             !=        INEGALITE . <br>
+
+    <      ==>    INFERIEUR               /           <=       INFERIEUR OU EGAL . <br>
+
+    >      ==>     SUPERIEUR               /           >=       SUPERIEUR OU EGAL . <br>
+
+    Les résultats des opérations de comparaison sont de type int: la valeur 0 correspond à la valeur booléenne FAUX, la valeur 1 correspond à la valeur booléenne VRAI
+
+    Les opérateurs logiques considèrent toute valeur différente de 0 comme VRAI, toute valeur nulle comme FAUX.
+
+    </div>
+    </p>
+    <h3 class="t4">Cours C complet : &#128071;</h3>
+    <div class="videos"> 
+        <video src="C:\Users\pc\Downloads\C Programming Tutorial for Beginners.mp4" width="700" height="350" controls></video>
+    </div>
+    <a href="#top" class="button"><button class="button"><h2> back to top &#128070;</h2></button></a>
+</div>
+</body>
+</html>

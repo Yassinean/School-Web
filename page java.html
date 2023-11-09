@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./jj.png">
+    <title>Cours JAVA</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+        :root{
+            --byad:#ffffff;
+            --hmer:#ff1111;
+            --gradient:linear-gradient(90deg, var(--byad), var(--hmer));
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:var(--gradient);
+            padding:3rem 7%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container{
+            background:rgb(255, 255, 255);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        }
+        .t1{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: -10px;
+            color: rgb(235, 0, 0);
+        }
+        .t3 {
+          color: rgb(255, 0, 0);
+          font-size: 25px;
+          font-family: 'Nunito', sans-serif;
+          text-align: center;
+      }
+      .para{
+          border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito', sans-serif;
+          font-size: 20px;
+      }
+      .list{
+          border: 1px solid rgb(0, 0, 0);
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito', sans-serif;
+          font-size: 20px;
+      }
+      .table{
+          margin-left: 50px;
+          height: 100px;
+      }
+      .td{
+          color:rgb(0, 175, 206);
+          font-size: 30px;
+          font-family: 'Nunito', sans-serif;
+      }
+      .videos{
+          margin-left: 250px;
+        }
+      .td1{
+          color: green;
+          font-size: 30px;
+          font-family: 'Nunito', sans-serif;
+      }
+      .a{
+          font-size: 35px;
+          color: gray;
+      }
+       .button{
+          text-decoration: none;
+          font-size: .5rem;
+          font-family: monospace;
+          transition: .1s ease ;
+      }
+      .button :hover{
+          background-color: rgb(255, 46, 60);
+          color: azure;
+          transform: scale(1.1);
+          border-radius: 15px;
+      }
+      .args{
+         font-size: 30px;
+      }
+      .th{
+          font-size: 30px;
+          font-family: 'Nunito', sans-serif;
+          background-color: cadetblue;
+      }
+      .td2{
+          font-size: 30px;
+          font-family: 'Nunito', sans-serif;
+      }
+        .main{
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+      }
+      @media (max-width:500px){
+            .container{
+                font-size: 70%;
+                height: 70%;
+            }
+            .t1{
+                font-size: 80%;
+                text-align: center;
+            }
+            .t3{
+                font-size: 70%;
+                text-align: center;
+            }
+            .t4{
+                font-size: 70%;
+                text-align: center;
+            }
+             img{
+                width: 5%;
+                height: 5%;
+             }
+             body{
+                font-size: 70%;
+            }
+             .main{
+                background-image: url(./java.jpeg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+             }
+             .para{
+                font-size: 70%;
+             }
+             .a0{
+                font-size: 70%;
+             }
+             video{
+                width: 294px;
+             }
+             .videos{
+                margin-left: 0px;
+             }
+             .button{
+                font-size: 70%;
+             }
+             .p{
+                 font-size: 70%;
+             }
+             .photo{
+                width: 290px;
+                height: 100px;
+                margin-left: 5px;
+             }
+             .para2{
+                 font-size: 70%;
+             }
+             .para1{
+                 font-size: 70%;
+             }
+             .a1{
+                 font-size: 70%;
+             }
+             img{
+                 margin-left: 5px;
+             }
+             .list{
+                font-size: 70%;
+                margin-left: 0px;
+             }
+             .table{
+                font-size: 40%;
+                width: 293px;
+                margin-left: 2px;
+            }
+            .td{
+               font-size: 70%; 
+            }
+            .a{
+                font-size: 70%;
+            }
+            .td1{
+                font-size: 70%;
+            }
+            .args{
+                font-size: 70%;
+            }
+            .td2{
+                font-size: 70%;
+            }
+            .th{
+                font-size: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <header class="head">
+    
+    <h1 class="t1" id="#top"><img src="images/java.jpeg" width="5%" height="5%" alt="image java ">  J A V A </h1>
+    
+    </header>
+    
+    <section class="main">
+        <div>
+            <img src="images/java.jpeg" alt="">
+        </div>
+    </section>
+    <h3 class="t3">1. Présentation de Java</h3>
+    <p class="para">Java est un langage de programmation à usage général, évolué et orienté objet dont la syntaxe est proche du C. Ses caractéristiques ainsi que la richesse de son écosystème et de sa communauté lui ont permis d'être très largement utilisé pour le développement d'applications de types très disparates. Java est notamment largement utilisé pour le développement d'applications d'entreprises et mobiles.
+        * Quelques chiffres et faits à propos de Java en 2011 : </p>
+        <ul class="list" type="circle">
+            <li>97% des machines d'entreprises ont une JVM installée.</li>
+            <li>Java est téléchargé plus d'un milliards de fois chaque année.</li>
+            <li>Il y a plus de 9 millions de développeurs Java dans le monde.</li>
+            <li>Java est un des langages les plus utilisés dans le monde.</li>
+            <li>Tous les lecteurs de Blue-Ray utilisent Java.</li>
+            <li>Plus de 3 milliards d'appareils mobiles peuvent mettre en oeuvre Java.</li>
+            <li>Plus de 1,4 milliards de cartes à puce utilisant Java sont produites chaque année</li>
+        </ul>
+    <h3 class="t3">2. Les notions et techniques de base en Java</h3>
+    
+    <ul class="list" type="square">
+        Ce chapitre présente quelques concepts de base utilisés en Java relatifs à la compilation et l'exécution d'applications, notamment, les notions de classpath, de packages et d'archives de déploiement jar. <br>
+        Ce chapitre contient plusieurs sections : <br>
+        <li><a href="#cb" >Les concepts de base</a></li>
+        <li><a href="">L'exécution d'une applet :</a> cette section présente l'exécution d'un programme et d'une applet.</li>
+    </ul>
+    <h3 class="t3" id="#cb">2.1. Les concepts de base</h3>
+    <ul class="list" type="circle">
+        La plate-forme Java utilise quelques notions de base lors de sa mise en oeuvre, notamment : <br>
+        <li>La compilation du code source dans un langage indépendant de la plate-forme d'exécution : le bytecode</li>
+        <li>l'exécution du bytecode par une machine virtuelle nommée JVM (Java Virtual Machine)</li>
+        <li>la notion de package qui permet d'organiser les classes</li>
+        <li>le classpath qui permet de préciser au compilateur et à la JVM où elle peut trouver les classes requises par l'application</li>
+        <li>le packaging des classes compilées dans une archive de déploiement nommée jar (Java ARchive)</li>
+    </ul>
+    <h3 class="t3">2.1.1. La compilation et l'exécution</h3>
+    <p class="para">Un programme Java est composé d'un ou plus généralement plusieurs fichiers source. N'importe quel éditeur de texte peut être utilisé pour éditer un fichier source Java.
+
+        Ces fichiers source possèdent l'extension .java. Ils peuvent contenir une ou plusieurs classes ou interfaces mais il ne peut y avoir qu'une seule classe ou interface déclarée publique par fichier. Le nom de ce fichier source doit obligatoirement correspondre à la casse près au nom de cette entité publique suivi de l'extension .java
+        
+        Il est nécessaire de compiler le source pour le transformer en J-code ou bytecode Java qui sera lui exécuté par la machine virtuelle. Pour être compilé, le programme doit être enregistré au format de caractères Unicode : une conversion automatique est faite par le JDK si nécessaire.
+        
+        Un compilateur Java, par exemple l'outil javac fourni avec le JDK est utilisé pour compiler chaque fichier source en fichier de classe possédant l'extension .class. Cette compilation génère pour chaque fichier source un ou plusieurs fichiers .class qui contiennent du bytecode. <br> <br>
+        <img src="images/java.jpg" alt="schéma de compilation">
+        </p>
+        <table class="table" width="1000px" border="1">
+            <tr>
+                <th class="th" colspan="2">Exemple</th>
+            </tr>
+            <tr>
+                <td width="50px"><ol type="1"><li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li>
+                </ol>
+            </td><td><a class="td">
+                public class MaClasse </a><a class="a">{</a>   <br>
+
+                   <a class="td">public static void</a><a class="td1"> main</a><a class="a">(</a><a class="td">String</a><a class="args">[] args)</a>  <a class="a">{</a> <br>
+                    <a class="td">System</a><a class="a">.</a><a class="args">out</a><a class="a">.</a><a class="td1">println</a><a class="a">(</a> <a class="td1">"Bonjour"</a><a class="a">);</a> <br>
+                    <a class="a">}</a>  <br>
+                    <a class="a">}</a> 
+                </td>
+            </tr>
+        </table> <br><br>
+        <table class="table" width="1000px" border="1">
+            <tr>
+                <th class="th" colspan="2">Résultats</th>
+            </tr>
+            <tr>
+                <td width="50px"><ol type="1"><li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li><br>
+                    <li></li>
+                </ol>
+            </td>
+            <td class="td2">
+                C:\TEMP>javac MaClasse.java <br><br>
+                C:\TEMP>dir MaClas* <br>
+                Volume in drive C has no label. <br>
+                Volume Serial Number is 1E06-2R43 <br><br><br>
+                Directory of C:\TEMP <br><br>
+                31/07/2007  13:34               417 MaClasse.class <br>
+                31/07/2007  13:34               117 MaClasse.java
+            </td>
+            </tr>
+        </table>
+        <h3 class="t3">Cours Java complet : &#128071;</h3>
+        <div class="videos"> 
+            <video src="C:\Users\pc\Downloads\Learn Java 8 - Full Tutorial for Beginners.mp4" width="700" height="350" controls></video>
+        </div>
+        <a href="#top" class="button"><button class="button"><h2> back to top &#128070;</h2></button></a>
+    </div>
+</body>
+</html>

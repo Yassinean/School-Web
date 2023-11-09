@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="javascript-icon-png-23.jpg">
+    <title>Cours JS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+        :root{
+            --byad:#ffffff;
+            --sfar:#d9ff00;
+            --gradient:linear-gradient(90deg, var(--byad), var(--sfar));
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:var(--gradient);
+            padding:3rem 7%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container{
+            background:rgb(255, 255, 255);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        }
+        .t1{
+            text-align: center;
+            margin-top: -5px;
+            color: rgb(215, 253, 0);
+            font-family: 'Nunito', sans-serif;
+            font-size: 45px;
+        }
+        .t3{
+        color: #02fc38;
+        font-size: 25px;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;  
+        }
+        .t4{
+        color: #02fc38;
+        font-size: 25px;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;    
+        }
+        .para{
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .para1{ 
+        border: 1px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        }
+        .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url(./js.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .note{
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(0, 174, 255);
+        color: rgb(255, 255, 255);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+      }
+      #note{
+          color: rgb(98, 0, 255);
+      }
+      .a{
+          color: rgb(98, 38, 255);
+      }
+      .a1{
+          color: green;
+      }
+      .a2{
+          color: red;
+          font-size: 30px;
+      }
+      .videos{
+          margin-left: 250px;
+        }
+        .button{
+          text-decoration: none;
+          font-size: .5rem;
+          font-family: monospace;
+          transition: .1s ease ;
+      }
+      .button :hover{
+          background-color: rgb(231, 206, 64);
+          color: azure;
+          transform: scale(1.1);
+          border-radius: 15px;
+      }
+      @media (max-width:500px){
+            .container{
+                font-size: 70%;
+                height: 70%;
+            }
+            .t1{
+                font-size: 80%;
+                text-align: center;
+            }
+            .t1 img{
+                width: 5%;
+                height: 5%;
+            }
+            .t3{
+                font-size: 70%;
+                text-align: center;
+            }
+            .t4{
+                font-size: 70%;
+                text-align: center;
+            }
+             img{
+                width: 5%;
+                height: 5%;
+             }
+             body{
+                font-size: 70%;
+            }
+             .main{
+                background-image: url(./js.jpeg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+             }
+             .para{
+                font-size: 70%;
+             }
+             .a0{
+                font-size: 70%;
+             }
+             video{
+                width: 294px;
+             }
+             .videos{
+                margin-left: 0px;
+             }
+             .button{
+                font-size: 70%;
+             }
+             .p{
+                 font-size: 70%;
+             }
+             .photo{
+                width: 290px;
+                height: 100px;
+                margin-left: 5px;
+             }
+             .para2{
+                 font-size: 70%;
+             }
+             .para1{
+                 font-size: 70%;
+             }
+             .a1{
+                 font-size: 70%;
+             }
+             img{
+                 margin-left: 5px;
+             }
+             .list{
+                font-size: 70%;
+                margin-left: 0px;
+             }
+             .a2{
+                 font-size: 70%;
+             }
+             .note{
+                 font-size: 70%;
+             }
+             img{
+                height: 70%;
+                width: 70%; 
+             }
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>  
+        <h1 class="t1" id="#top"><img src="images/javascript-icon-png-23.jpg" width="35px" height="35px" alt="image js"> Java Script </h1>
+
+    </header>
+    <section class="main">
+        <div>
+            <img src="" alt="">
+        </div>
+    </section>
+    <h3 class="t3">Les bases de JavaScript</h3>
+    <p class="para">
+        JavaScript est un langage de programmation qui ajoute de l'interactivité à votre site web (par exemple : jeux, réponses quand on clique sur un bouton ou des données entrées dans des formulaires, composition dynamique, animations). Cet article vous aide à débuter dans ce langage passionnant et vous donne une idée de ses possibilités.
+    </p>
+    <h3 class="t3">Qu'est le JavaScript, réellement ?</h3>
+    <p class="para">JavaScript (« JS » en abrégé) est un langage de programmation dynamique complet qui, appliqué à un document HTML, peut fournir une interactivité dynamique sur les sites Web. Il a été inventé par Brendan Eich, co-fondateur du projet Mozilla, de la Mozilla Foundation et de la Mozilla Corporation.
+
+        JavaScript est d'une incroyable flexibilité. Vous pouvez commencer petit, avec des carrousels, des galeries d'images, des variations de mises en page et des réponses aux clics de boutons. Avec plus d'expérience, vous serez en mesure de créer des jeux, des graphiques 2D et 3D animés, des applications complètes fondées sur des bases de données et bien plus encore !
+        
+        JavaScript est plutôt compact tout en étant très souple. Les développeurs ont écrit de nombreux outils sur le cœur du langage JavaScript, créant des fonctionnalités supplémentaires très simplement. Parmi ces outils, il y a :</p>
+    <ul class="para1" type="circle">
+        <li>des Interfaces de Programmation d'Applications pour navigateurs (API) — API intégrées aux navigateurs web permettant de créer dynamiquement du HTML, de définir des styles de CSS, de collecter et manipuler un flux vidéo depuis la webcam de l'utilisateur ou de créer des graphiques 3D et des échantillonnages audio.</li><br>
+        <li>des API tierces‑parties permettant aux développeurs d'incorporer dans leurs sites des fonctionnalités issues d'autres fournisseurs de contenu, comme Twitter ou Facebook.</li><br>
+        <li>des modèles et bibliothèques tierces‑parties applicables à votre HTML permettant de mettre en œuvre rapidement des sites et des applications.</li>
+    </ul>
+    <p class="para1">Comme cet article est une introduction simplifiée à JavaScript, nous n'allons pas compliquer les choses à ce stade en entrant dans les détails sur les différences entre le coeur du langage JavaScript et les différents outils cités plus haut. Vous pourrez entrer dans ces détails plus tard grâce à notre centre d'apprentissage JavaScript, et le reste du MDN.
+    Ci-dessous nous allons vous présenter quelques aspects du coeur du langage, et vous pratiquerez aussi en manipulant les fonctionnalités des API navigateur. Amusez-vous !</p>
+        <h3 class="t3">Un exemple « hello world »</h3>
+        <p class="para">Le paragraphe précédent laisse entrevoir quelque chose de passionnant, et cela l'est vraiment — JavaScript est une technologie web parmi les plus dynamiques. Une fois que vous commencerez à être autonome en JavaScript, vous entrerez dans une nouvelle dimension de puissance et créativité.
+
+            Cependant, être à l'aise avec JavaScript est plus dur que de l'être avec HTML ou CSS. Vous pourrez démarrer petit et continuer à travailler par petites étapes de façon soutenue. Pour commencer, nous allons vous montrer comment ajouter un JavaScript basique à votre page, en créant un exemple « Hello world ! »</p>
+        <ol class="para" type="1">
+            <li>Tout d'abord, allez sur votre site de test et créez un nouveau dossier nommé « scripts » (sans guillemets). Ensuite, dans le nouveau dossier scripts que vous venez de créer, créez un nouveau fichier appelé main.js. Sauvegardez-le dans votre dossier scripts.</li><br>
+            <li>Ensuite, dans votre fichier index.html, ajoutez l'élément suivant sur une nouvelle ligne avant la balise fermante (/body) :
+                (script src="scripts/main.js")(/script)</li><br>
+            <li>Cet élément a le même rôle que l'élément (link) pour le CSS — il applique le code JavaScript à la page, de sorte qu'il puisse avoir de l'effet sur le HTML (en même temps que le CSS et autres sur la page).</li><br>
+            <li>Maintenant ajoutez le code suivant dans main.js :<br>
+                let myHeading = document.querySelector('h1');<br>
+                myHeading.textContent = 'Bonjour, monde !';</li><br>
+            <li>Assurez-vous que les fichiers HTML et JavaScript soient enregistrés puis chargez index.html dans votre navigateur. Vous devriez obtenir quelque chose comme : <br>
+            <img src="images/hello-world.png" width="40%" height="40%" alt="hello-world">
+            </li>
+            <a class="a2">Remarque : < = ( et > = ) </a> &#x26A0;
+        </ol>            
+        <p class="note"><strong id="note">Note</strong> : La raison pour laquelle nous avons placé l'élément (script) en bas du fichier HTML est que le HTML est chargé par le navigateur dans l'ordre dans lequel il apparaît dans le fichier. Si le JavaScript est chargé en premier et qu'il est supposé affecter le HTML en dessous, il pourrait ne pas fonctionner, car le JavaScript serait chargé avant le HTML sur lequel il est supposé travailler. Par conséquent, placer JavaScript près du bas de la page HTML est souvent la meilleure stratégie.</p>
+        <h3 class="t3">Les bases du JavaScript en accéléré</h3>
+        <p class="para">Nous allons explorer les fonctionnalités de base de JavaScript pour que vous puissiez mieux comprendre comment il fonctionne. Ces fonctionnalités sont communes à la plupart des langages de programmation, si vous comprenez ces éléments en JavaScript, vous êtes en bonne voie de pouvoir programmer à peu près n'importe quoi !</p>
+        <h4 class="t4"> I) Variables</h4>
+        <p class="para">Les variables sont des conteneurs dans lesquels on peut stocker des valeurs. Pour commencer, il faut déclarer une variable avec le mot-clé let en le faisant suivre de son nom :<br>
+            <a class="a">let</a> myVariable;<br>
+            Une fois une variable déclarée, vous pouvez lui donner une valeur : <br>
+
+                        myVariable = <a class="a1">'Bob'</a>;<br>
+            Vous pouvez faire les deux opérations sur une même ligne si vous le souhaitez :<br>
+
+                        <a class="a">let</a> myVariable = <a class="a1">'Bob'</a>;
+        </p>
+        <h3 class="t3">Cours JavaScript complet : &#128071;</h3>
+        <div class="videos"> 
+            <video src="C:\Users\pc\Downloads\Learn JavaScript - Full Course for Beginners.mp4" width="700" height="350" controls></video>
+        </div>
+        <a href="#top" class="button"><button class="button"><h2> back to top &#128070;</h2></button></a>
+    </div>
+    </body>
+</html>

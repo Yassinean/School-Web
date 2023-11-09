@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./tof2 html.png">
+    <title> Cours HTML </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+        :root{
+            --byad:#ffffff;
+            --limoni:#ff5e00;
+            --gradient:linear-gradient(90deg, var(--byad), var(--limoni));
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:var(--gradient);
+            padding:3rem 7%;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container{
+            background:rgb(255, 255, 255);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        }
+        .header{
+            display: flex;
+            text-align: center;
+            padding-top: 2rem;
+            justify-content: center;
+        }
+        .t1{
+            color: #000;
+            font-family: 'Nunito',sans-serif;
+            justify-content: center;
+            text-align: center;
+        }
+        .t2{
+            justify-content: center;
+            text-align: center;
+        }
+
+      .qq{
+          color: red;
+      }
+      .t3 {
+          color: rgb(255, 115, 0);
+          font-size: 25px;
+          font-family: 'Nunito',sans-serif;
+          text-align: center;  
+      }
+      .para{
+          border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .para1{
+        border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .para2{
+        border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .para3{
+        border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .para4{
+        border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .para5{
+        border: 1px solid rgb(0, 0, 0);
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+      }
+      .em{
+          color: red;
+      }
+      .list{
+          border: 1px solid rgb(0, 0, 0);
+          color: rgb(0, 0, 0);
+          font-family: 'Nunito',sans-serif;
+          font-size: 20px;
+          margin-left: 50px;
+      }
+      .p2{
+          
+          font-size: 30px;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          font-family: 'Nunito',sans-serif;
+      }
+      .p3{
+          font-size: 30px;
+          color: rgb(0, 0, 0);
+          text-align: center;
+      }
+      .videos{
+          margin-left: 250px;
+      }
+      .photo{
+          margin-left: 400px;
+          width :500px; 
+          height:250px;
+      }
+      .a0{
+          color: red;
+          font-size: 30px;
+      }
+      .button{
+          text-decoration: none;
+          font-size: .5rem;
+          font-family: monospace;
+          transition: .1s ease ;
+      }
+      .button :hover{
+          background-color: #fc7c04;
+          color: azure;
+          transform: scale(1.1);
+          border-radius: 15px;
+      }
+      .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url(./html5.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+      @media (max-width:500px){
+            .container{
+                font-size: 70%;
+                height: 70%;
+            }
+            .t1{
+                font-size: 80%;
+                text-align: center;
+            }
+            .t3{
+                font-size: 70%;
+                text-align: center;
+            }
+            .t4{
+                font-size: 70%;
+                text-align: center;
+            }
+             img{
+                width: 5%;
+                height: 5%;
+             }
+             body{
+                font-size: 70%;
+            }
+             .main{
+                background-image: url(./html5.jpeg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+             }
+             .para{
+                font-size: 70%;
+             }
+             .a0{
+                font-size: 70%;
+             }
+             video{
+                width: 294px;
+             }
+             .videos{
+                margin-left: 0px;
+             }
+             .button{
+                font-size: 70%;
+             }
+             .p{
+                 font-size: 70%;
+             }
+             .photo{
+                width: 290px;
+                height: 100px;
+                margin-left: 5px;
+             }
+             .para2{
+                 font-size: 70%;
+             }
+             .para1{
+                 font-size: 70%;
+             }
+             .a1{
+                 font-size: 70%;
+             }
+             img{
+                 margin-left: 5px;
+             }
+             .list{
+                font-size: 70%;
+                margin-left: 0px;
+             }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div><h1 class="t1" id="#top"><img src="images/tof2 html.png" width="25px" height="25px" class="ts"alt="image html ">  H T M L </h1></div>
+    </header>
+    
+    <div class="onwan">
+        <h2 class="t1"> <strong class="qq">H</strong>yper <strong class="qq" >T</strong>ext <strong class="qq">M</strong>arkup <strong class="qq" >L</strong>anguage</h2><br><br>
+    </div>
+        <section class="main">
+            <div>
+            </div>
+        </section>
+        <h3 class="t3"> C'est quoi HTML en informatique ?</h3>
+    
+        <p class="para1">L'HyperText Markup Language, HTML, désigne un type de langage informatique descriptif. Il s'agit plus précisément d'un format de données utilisé dans l'univers d'Internet pour la mise en forme des pages Web. Il permet, entre autres, d'écrire de l'hypertexte, mais aussi d'introduire des ressources multimédias dans un contenu.<br>Développé par le W3C <em class="em">(World Wide Web Consortium)</em> et le WHATWG <em class="em"> (Web Hypertext Application Technology Working Group)</em>, le format ou langage HTML est apparu dans les années 1990. Il a progressivement subi des modifications et propose depuis 2014 une version HTML5 plus aboutie.
+
+            L'HTML est ce qui permet à un créateur de sites Web de gérer la manière dont le contenu de ses pages Web va s'afficher sur un écran, via le navigateur. Il repose sur un système de balises permettant de titrer, sous-titrer, mettre en gras, etc., du texte et d'introduire des éléments interactifs comme des images, des liens, des vidéos... L'HTML est plus facilement compris des robots de crawl des moteurs de recherche que le language JavaScript, aussi utilisé pour rendre les pages plus interactives. </p>
+        <h3 class="t3">Qu'est-ce qu'une balise en HTML ? </h3>
+
+        <p class="p">Le HTML repose sur une syntaxe simple et rigide, dont l'unité de base est la balise. Les balises vont toujours par deux, une pour ouvrir l'élément, l'autre pour le fermer.  Elles se construisent toujours de la même façon : </p>
+
+            <ul type="square" class="list">
+                <li>La balise ouvrante : celle-ci se compose du nom de l'élément (ici « p »), entre deux chevrons. Cela indique le début de l'élément, soit l'endroit à partir duquel celui-ci prend effet. Pour notre exemple, cela indique le début du paragraphe.</li>   
+                <li>La balise fermante : ici on a également des chevrons et le nom de l'élément, auxquels on ajoute une barre oblique avant le nom de l'élément. Cela indique la fin de l'élément. Pour notre exemple, cela indique la fin du paragraphe. Oublier la balise fermante est une erreur courante de débutant et peut conduire à de curieux résultats.</li> 
+                <li>Le contenu : C'est le contenu de l'élément. Ici, c'est simplement du texte.</li>
+                <li>L'élément : Il est composé de la balise ouvrante, de la balise fermante et du contenu.</li>
+            </ul>
+        <img class="photo" src="images/balise.jpg" alt="image code" ><br><br> 
+
+        <h3 class="t3">Imbriquer des éléments</h3>
+
+        <p class="para2">Vous pouvez placer des éléments au sein d'autres éléments, c'est ce qu'on appelle l'imbrication. Par exemple, si vous souhaitez montrer que votre chat est très grincheux, vous pouvez placer le mot « très » dans un élement (strong), signifiant que le mot sera fortement mis en relief :<br><br>
+            (p) Mon chat est (strong)très(/strong) grincheux.(/p) &#128515; <br>
+            <a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </p>
+
+        <p class="para1">Toutefois, il faut faire attention à ce que les éléments soient bien imbriqués les uns dans les autres. Dans l'exemple précédent, on ouvre l'élément (p) , puis l'élément (strong). Nous devrons donc fermer l'élément (strong) d'abord, puis l'élement (p). Le code suivant est incorrect :<br><br>
+            (p) Mon chat est (strong)très grincheux.(/p)(/strong) &#x1F641; <br>
+            <a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </p>
+
+        <h3 class="t3">Les éléments vides</h3>
+
+        <p class="para1">Certains éléments n'ont pas de contenu. Ces éléments sont appelés éléments vides. Prenons l'élément (img) présent dans notre fichier HTML :<br><br>
+            (img src="images/firefox-icon.png" alt="Mon image test" /)<br> <br>
+            Cet élément contient deux attributs mais les balises ouvrante (img) et fermante (/img) sont remplacées par une balise auto-fermante (img /) et il n'y a aucun contenu interne. En effet, l'élément image n'embarque pas de contenu, son but est d'intégrer une image dans la page HTML, à l'endroit où l'élément est placé. <br>
+            <a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </p>
+
+        <h3 class="t3">Les titres</h3>
+
+        <p class="para1">Les éléments de titre permettent de définir certains textes comme des titres ou sous-titres pour le contenu. D'une certaine façon, ceux-ci fonctionnent comme pour un livre : on a le titre du livre (le plus important) puis les titres des différents chapitres et parfois des sous-titres au sein de ces chapitres. HTML contient des éléments pour 6 niveaux de titres : (h1)(h6). La plupart du temps, 3-4 niveaux suffisent amplement : <br><br>
+            (h1)Mon titre principal(/h1)<br>
+            (h2)Mon titre de section(/h2)<br>
+            (h3)Mon sous-titre(/h3)<br>
+            (h4)Mon sous-sous-titre(/h4)<br>
+            (h5)Mon sous-sous-titre(/h5)<br>
+            (h6)Mon sous-sous-titre(/h6)<br>
+            <a class="a0">Remarque : < = ( et > = ) </a> &#x26A0;
+        </p>
+        <img src="images/titles.png" class="photo" alt="">
+
+        <h3 class="t3">Cours HTML complet : &#128071;</h3>
+
+       <div class="videos"> 
+        <video src="C:\Users\pc\Downloads\HTML Full Course - Build a Website Tutorial.mp4" controls width="700px" height="350px"></video>
+       </div>
+       <a href="#top" class="button"><button class="button"><h2> back to top &#128070;</h2></button></a>
+    </div>
+</body>
+</html>

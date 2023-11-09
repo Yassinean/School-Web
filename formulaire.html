@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>inscription à E Learning</title>
+  <link rel="icon" href="./computer-icon-gfe60b2fae_1920.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="javas.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --violet:#6c5ce7;
+  --pink:#FC427B;
+  --gradient:linear-gradient(90deg, var(--violet), var(--pink));
+}
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background: var(--gradient);
+}
+form {
+  margin-top: 20px;
+  padding: 40px 60px;
+  border-radius: 10px;
+  min-width: 300px;
+  background-color: #fff;
+}
+form .t1{
+  font-size: 2.5rem;
+  color:var(--violet);
+  font-weight: bold;
+  text-align: center;
+}
+
+form p.choose-email{
+  text-align:center;
+  color:var(--pink);
+  font-size: 1rem;
+}
+form .inputs {
+  display: flex;
+  flex-direction: column;
+}
+form .inputs input[type='email'], input[type='password']{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+  background-color:rgb(184, 227, 255);
+  outline:none;
+  margin-bottom: 15px;
+  
+}
+form .inputs input[type='email']:hover, input[type='password']:hover{
+  background-color: white;
+  transition: 1s ease;
+}
+form .inputs input[type='email']:focus, input[type='password']:focus{
+  border-color: #FC427B;
+}
+form p.inscription{
+  color:var(--pink);
+  font-size: 1rem;
+  text-align: center;
+}
+.sift{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+.share{
+  text-align: center;
+}
+.share a{
+  background-color: #FC427B;
+  font-size: 1.5rem;
+  margin:.5rem;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  width: 2.5rem;height: 2.5rem;
+  border-radius: .5rem;
+  margin-top: .5rem;
+  line-height: 2.5rem;
+}
+.share a:hover{
+  background:var(--violet);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:.8rem 3rem;
+  border-radius: .5rem;
+  background:#333;
+  color:#fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: 1s ease ;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+  background:var(--gradient);
+}   
+  </style>
+
+</head>
+<body>
+  <form>
+    <h1 class="t1">Se connecter</h1>
+    <div class="share">
+      <a href="https://www.facebook.com/groups/1605550896386197" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/htmlcss_stack" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/html_css_codings/?hl=fr" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+  </div>
+    <p class="choose-email">ou utiliser adresse e-mail :</p>
+    
+    <div class="inputs">
+      <label for="fm"></label><input type="email" id="fm" placeholder="Tapez votre email" name="" required>
+      <label for="frm"></label><input type="password" id="frm" placeholder="Mot de passe" name="" >
+    </div>
+    
+    <p class="inscription">Je n'ai pas de compte. Je m'en crée un.</p>
+    <div align="center">
+      <button class="btn"><a href="file:///C:/Users/pc/Desktop/.final/home.html" class="sift">Se connecter</a> </button>
+    </div>
+  </form>
+</body>
+</html>
